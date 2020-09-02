@@ -74,3 +74,6 @@
 # smiley:
 #   enabled: true
 #   dir: img/smileys
+
+
+theme: jekyll-theme-persephone     #自己添加的
