@@ -20,7 +20,7 @@ logo: /img/logo.jpg                                                    #图形�
 # If the images of our blog are stored in an external cloud. You can use the jekyll-img-prefix plugin and set your images' base URL here.
 img_prefix: https://your-img-cdn.com                                   #如果你是在网上找的图片，写下网址
 # The RSS link of your blog.
-rss: "/feed.xml"
+rss: "/feed.xml"                                                       #此处没明白是什么。不用管它，没影响。
 
 # The followings are settings for displays of your blog.
 theme_setting:
