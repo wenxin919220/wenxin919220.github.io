@@ -1,8 +1,8 @@
-title: 文心                                #此为左上角的那个名字
-description: The description of your site.  
+title: 文心                                    #此为左上角的那个名字
+description: The description of your site.
 email: your-email@address.com
 
-author: Your name #  Default is your site title.
+author: 文心   #  Default is your site title.  #作者名字默认为title
 
 # Your social accounts.
 social:
