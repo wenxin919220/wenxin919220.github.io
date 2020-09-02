@@ -6,7 +6,7 @@ author: 文心   #  Default is your site title.  #作者名字默认为title
 
 # Your social accounts.                        #你的社交网站：网址
 social:
-  github: github_username
+  github: https://github.com/wenxin919220
   twitter: twitter_username
   facebook: facebook_username
   instagram: instagram_username
