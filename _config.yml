@@ -20,12 +20,12 @@ logo: /img/logo.jpg                                                    #图形�
 # If the images of our blog are stored in an external cloud. You can use the jekyll-img-prefix plugin and set your images' base URL here.
 img_prefix: https://your-img-cdn.com                                   #如果你是在网上找的图片，写下网址
 # The RSS link of your blog.
-rss: "/feed.xml"                                                       ##？？##此处没明白是什么。不用管它，没影响。
+rss: "/feed.xml"                                                       ##？？？？？##此处没明白是什么。不用管它，没影响。
 
 # The followings are settings for displays of your blog.
 theme_setting:
   # The slides count in the slides layout. Default is 4.
-  slides_count: 5                                                      ##？？##此处不明白
+  slides_count: 5                                                      ##？？？？？##此处不明白
   # The ← back URL on the top of your post page. Default is your site's home page.
   blog_page: "blog/index.md"                                           #对博客进行设置。此模板中没有，我是从她的博客中复制来的。
   # The URL on your name on the bottom of your post and page. Default is your site's home page.
@@ -36,7 +36,7 @@ theme_setting:
   nav_pages:
     - "about.md"
     -
-      title: "External Link Title 外部连接标题"
+      title: "External Link Title 外部连接标题"                        #？？？？？##此处不明白
       url: "https://your-external-link.com"
   # Every default value in the following settings is false. You can set them globally here or separately in a single post/page/chapter.
   code: true # Code highlight.
