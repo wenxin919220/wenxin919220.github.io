@@ -3,8 +3,6 @@ description: 生活就是一本书，一壶茶，一个阳光明媚的下午！
 email: 2135482699@qq.com
 
 author: 文心   #  Default is your site title.  #作者名字默认为title
-#url: "https:wenxin919220.github.io"            # 参照她的博客加上的
-
 
 # Your social accounts.                        #你的社交网站：网址
 social:
@@ -22,9 +20,8 @@ logo: /img/logo.jpg                                                    #图形�
 # If the images of our blog are stored in an external cloud. You can use the jekyll-img-prefix plugin and set your images' base URL here.
 img_prefix: https://your-img-cdn.com                                   #如果你是在网上找的图片，写下网址
 # The RSS link of your blog.
-rss: "/feed.xml"                                                       ##？？？？？##此处没明白是什么。不用管它，没影响。
+rss: "/feed.xml"                                                    ##？？？？？##此处没明白是什么。不用管它，没影响。
 
-theme: 'jekyll-theme-persephone'
 theme: jekyll-theme-persephone     #自己添加的
 
 # The followings are settings for displays of your blog.
@@ -41,7 +38,7 @@ theme_setting:
   nav_pages:
     - "about.md"
     -
-      title: "External Link Title 外部连接标题"                        #？？？？？##此处不明白
+      title: "外部连接标题  归档 "                        #？？？？？##此处不明白
       url: "https://your-external-link.com"
   # Every default value in the following settings is false. You can set them globally here or separately in a single post/page/chapter.
   code: true # Code highlight.
@@ -78,16 +75,17 @@ smiley:
   enabled: true
   dir: img/smileys
 
-head_code: |
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?3176e6e675ed7773f831e38c7a57880f";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+ head_code: |
+   <!-- Extra codes in the head of your site pages. You can add your Google Analysis codes here! -->
+  # <script>
+    # var _hmt = _hmt || [];
+    # (function() {
+      # var hm = document.createElement("script");
+      # hm.src = "https://hm.baidu.com/hm.js?3176e6e675ed7773f831e38c7a57880f";
+      # var s = document.getElementsByTagName("script")[0]; 
+      # s.parentNode.insertBefore(hm, s);
+    # })();
+  # </script>
 
 
 
