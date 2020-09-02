@@ -11,7 +11,7 @@ social:
 
 
 # Theme Settings
-logo: /img/logo.jpg
+logo: /img/logo.png
 rss: "/feed.xml"
 theme: 'jekyll-theme-persephone'
 theme_setting:
