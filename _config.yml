@@ -4,7 +4,7 @@ email: your-email@address.com
 
 author: 文心   #  Default is your site title.  #作者名字默认为title
 
-# Your social accounts.
+# Your social accounts.                        #你的社交网站：网址
 social:
   github: github_username
   twitter: twitter_username
@@ -15,8 +15,8 @@ social:
 
 # Theme Settings
 
-# Your site's logo. Will be shown on the left top of your page.
-logo: /img/logo.svg
+# Your site's logo. Will be shown on the left top of your page.    #左上角的那个叶子图像
+logo: /img/logo.svg                                                #图形的存放目录
 # If the images of our blog are stored in an external cloud. You can use the jekyll-img-prefix plugin and set your images' base URL here.
 img_prefix: https://your-img-cdn.com
 # The RSS link of your blog.
