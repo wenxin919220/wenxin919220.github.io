@@ -1,8 +1,10 @@
 title: 文心                                    #此为左上角的那个名字
-description: The description of your site.
-email: your-email@address.com
+description: 生活就是一本书，一壶茶，一个阳光明媚的下午！
+email: 2135482699@qq.com
 
 author: 文心   #  Default is your site title.  #作者名字默认为title
+url: "https:wenxin919220.github.io"            # 参照她的博客加上的
+
 
 # Your social accounts.                        #你的社交网站：网址
 social:
@@ -21,6 +23,9 @@ logo: /img/logo.jpg                                                    #图形�
 img_prefix: https://your-img-cdn.com                                   #如果你是在网上找的图片，写下网址
 # The RSS link of your blog.
 rss: "/feed.xml"                                                       ##？？？？？##此处没明白是什么。不用管它，没影响。
+
+theme: 'jekyll-theme-persephone'
+theme: jekyll-theme-persephone     #自己添加的
 
 # The followings are settings for displays of your blog.
 theme_setting:
@@ -44,8 +49,8 @@ theme_setting:
   mermaid: true # Mermaid
   #  Locales of this theme.
   lang:
-    category_all: All # The first tag in the categories bar on the blog layout page. By clicking it all of your posts will be shown. Default is 'All'.
-    blog_title: Blog # The text of ← back url on the top of the post layout.  Default is 'Home'.
+    category_all: 全部 # The first tag in the categories bar on the blog layout page. By clicking it all of your posts will be shown. Default is 'All'.
+    blog_title: 博客 # The text of ← back url on the top of the post layout.  Default is 'Home'.
     # The locales of the comment controls.
     comment:
       user: "昵称"
@@ -54,8 +59,6 @@ theme_setting:
       message: "说点什么吧..."
       reply: "回复"
 
-head_code: |
-  <!-- Extra codes in the head of your site pages. You can add your Google Analysis codes here! -->
 
 # The settings of comments.
 comment:
@@ -75,5 +78,62 @@ smiley:
   enabled: true
   dir: img/smileys
 
+head_code: |
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3176e6e675ed7773f831e38c7a57880f";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
-theme: jekyll-theme-persephone     #自己添加的
+
+
+# Jekyll Settings
+markdown: kramdown
+permalink: /blog/:title:output_ext
+timezone: Asia/Shanghai
+excerpt_separator: <!--more-->
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      keywords: 文心, 博客fork自叶夕青兮, Jekyll, minimal lifestyle blog
+      description: 文心，目前还是学生。这里是他的独立博客。文心上下，是为“忞”，去自强努力之意。于此，记录走过的路，读过的书，遇到的人。
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      toc: true
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-books
+  #- jekyll-img-prefix
+  - jekyll-smiley
+  - jekyll-toc
+  - jekyll-deploy-oss
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - scripts/
+deploy:
+  endpoint: "oss-cn-hongkong.aliyuncs.com"
+  bucket_name: "erlim"
+  expired_in: 1
+  paths:
+    - blog
+    - feed.xml
+    - sitemap.xml
