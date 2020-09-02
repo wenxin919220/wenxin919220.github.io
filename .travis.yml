@@ -1,13 +1,13 @@
 language: ruby
-rvm:
-  - 2.5
-script: bundle exec jekyll build
-cache: bundler
-after_success: bundle exec jekyll deploy
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+install: 
+  - gem install jekyll
+  - gem install jekyll-paginate
+script: 
+  - jekyll build
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  
 
-branches:
-  only:
-      - master
-
-notifications:
-  email: false
