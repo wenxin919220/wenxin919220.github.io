@@ -1,10 +1,10 @@
-name: 良仔的博客
-author: liangzai.pub
+name: 文心的博客
+author: liangzai.pub                                              #这是什么？？？？？？？？？？？？？？？
 #baseurl: /liangzai.pub
-keywords: java,github,git,jekyll,gollum,jquery,flash,良先生,良仔
-description: 一个小白码农的博客
-github: https://github.com/liangrengongzuoshi
-email: crawler_vip@163.com
+keywords: java,github,git,jekyll,gollum,jquery,flash,良先生,良仔  #这在哪里显示？？？？？？？？？？？
+description: 有些路注定要一个人走！
+github: https://github.com/wenxin919220
+email: 2135482699@qq.com
 
 
 encoding: utf-8
