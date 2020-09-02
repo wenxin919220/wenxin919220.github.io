@@ -1,88 +1,96 @@
-title: 文心                                    #此为左上角的那个名字
+---
+title: 叶夕青兮
 description: 生活就是一本书，一壶茶，一个阳光明媚的下午！
-email: 2135482699@qq.com
-
-author: 文心   #  Default is your site title.  #作者名字默认为title
-
-# Your social accounts.                        #你的社交网站：网址
+locale: zh
+email: "zhangshiyu1992@hotmail.com"
+url: "https://erl.im"
 social:
-  github: https://github.com/wenxin919220
-  twitter: twitter_username
-  facebook: facebook_username
-  weibo: weibo_username
-  stackoverflow: https://stackoverflow.com/users/14197139/winxin
-  instagram: instagram_username
+  github: "erlzhang"
+  twitter: "icily0719"
+  codepen: "erlzhang"
 
 # Theme Settings
-
-# Your site's logo. Will be shown on the left top of your page.        #左上角的那个叶子图像
-logo: /img/logo.jpg                                                    #图形的存放目录  图片像素推建：50 X 50
-# If the images of our blog are stored in an external cloud. You can use the jekyll-img-prefix plugin and set your images' base URL here.
-img_prefix: https://your-img-cdn.com                                   #如果你是在网上找的图片，写下网址
-# The RSS link of your blog.
-rss: "/feed.xml"                                                    ##？？？？？##此处没明白是什么。不用管它，没影响。
-
-theme: jekyll-theme-persephone     #自己添加的
-
-# The followings are settings for displays of your blog.
+logo: /img/logo.svg
+rss: "/feed.xml"
+theme: 'jekyll-theme-persephone'
 theme_setting:
-  # The slides count in the slides layout. Default is 4.
-  slides_count: 5                                                      ##？？？？？##此处不明白
-  # The ← back URL on the top of your post page. Default is your site's home page.
-  blog_page: "blog/index.md"                                           #对博客进行设置。此模板中没有，我是从她的博客中复制来的。
-  # The URL on your name on the bottom of your post and page. Default is your site's home page.
-  about_page: "about.md"                                               #“关于”按键，此模板中没有，我是从她的博客中复制来的。
-  #  The URL of the menu icon(which has three black lines). Will be shown on the slides/book/chapter layouts It won't be shown if blank.
-  archive_page: "archive.md"                                           #此模板中没有，我是从她的博客中复制来的。
-  # The nav links on the top right of home/page/post/blog layout. You can set a local page(by setting a layout's path) or and external link ( both title and url are required) here.
+  blog_page: "blog/index.md"
+  about_page: "about.md"
+  archive_page: "archive.md"
   nav_pages:
     - "about.md"
-    -
-      title: "外部连接标题  归档 "                        #？？？？？##此处不明白
-      url: "https://your-external-link.com"
-  # Every default value in the following settings is false. You can set them globally here or separately in a single post/page/chapter.
-  code: true # Code highlight.
-  math: true # Mathjax
-  mermaid: true # Mermaid
-  #  Locales of this theme.
+    - "archive.md"
   lang:
-    category_all: 全部 # The first tag in the categories bar on the blog layout page. By clicking it all of your posts will be shown. Default is 'All'.
-    blog_title: 博客 # The text of ← back url on the top of the post layout.  Default is 'Home'.
-    # The locales of the comment controls.
+    category_all: "全部"
+    blog_title: "博客"
     comment:
       user: "昵称"
       email: "邮箱"
       url: "链接"
       message: "说点什么吧..."
       reply: "回复"
-
-
-# The settings of comments.
 comment:
-  # You should set it to enable comment
   enabled: true
-  # Your comment provider
-  provider: disqus # static/disqus
-  # If provider == disqus
-  disqus:
-    name: website_name
-  # Or provider == static
+  provider: "static"
   static:
-    # Your static comment url.
-    postUrl:  https://api.staticman.net/v2/connect/GITHUB-USERNAME/GITHUB-REPOSITORY
-# The settings of local smileys used in static comments. The jekyll-smiley plugin is required.
+    postUrl: "https://jekyll-comment-server.herokuapp.com/post-comment"
+    # postUrl: "https://g4vdkkahpjie.leanapp.cn/post-comment"
 smiley:
   enabled: true
-  dir: img/smileys
+head_code: |
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3176e6e675ed7773f831e38c7a57880f";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
- head_code: |
-   <!-- Extra codes in the head of your site pages. You can add your Google Analysis codes here! -->
-  # <script>
-    # var _hmt = _hmt || [];
-    # (function() {
-      # var hm = document.createElement("script");
-      # hm.src = "https://hm.baidu.com/hm.js?3176e6e675ed7773f831e38c7a57880f";
-      # var s = document.getElementsByTagName("script")[0]; 
-      # s.parentNode.insertBefore(hm, s);
-    # })();
-  # </script>
+# Jekyll Settings
+markdown: kramdown
+permalink: /blog/:title:output_ext
+timezone: Asia/Shanghai
+excerpt_separator: <!--more-->
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      keywords: 叶夕青兮, 原创独立博客, Erl, Jekyll, minimal lifestyle blog
+      description: 叶夕青兮，目前还是程序员。这里是她的独立博客，分享编程、建站、生活感悟、旅游随感、读书随笔、原创小说等。
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      toc: true
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-books
+  #- jekyll-img-prefix
+  - jekyll-smiley
+  - jekyll-toc
+  - jekyll-deploy-oss
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - scripts/
+deploy:
+  endpoint: "oss-cn-hongkong.aliyuncs.com"
+  bucket_name: "erlim"
+  expired_in: 1
+  paths:
+    - blog
+    - feed.xml
+    - sitemap.xml
