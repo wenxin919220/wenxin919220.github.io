@@ -1,26 +1,96 @@
-name: 文心的博客
-author: wenxin919220.github.io                                            #这是什么？？？？？？？？？？？？？？？
-#baseurl: /liangzai.pub
-keywords: j                                                               #这在哪里显示？？？？？？？？？？？
-description: 有些路注定要一个人走！
-github: https://github.com/wenxin919220
-email: 2135482699@qq.com
+---
+title: 叶夕青兮
+description: 生活就是一本书，一壶茶，一个阳光明媚的下午！
+locale: zh
+email: "zhangshiyu1992@hotmail.com"
+url: "https://erl.im"
+social:
+  github: "erlzhang"
+  twitter: "icily0719"
+  codepen: "erlzhang"
 
+# Theme Settings
+logo: /img/logo.svg
+rss: "/feed.xml"
+theme: 'jekyll-theme-persephone'
+theme_setting:
+  blog_page: "blog/index.md"
+  about_page: "about.md"
+  archive_page: "archive.md"
+  nav_pages:
+    - "about.md"
+    - "archive.md"
+  lang:
+    category_all: "全部"
+    blog_title: "博客"
+    comment:
+      user: "昵称"
+      email: "邮箱"
+      url: "链接"
+      message: "说点什么吧..."
+      reply: "回复"
+comment:
+  enabled: true
+  provider: "static"
+  static:
+    postUrl: "https://jekyll-comment-server.herokuapp.com/post-comment"
+    # postUrl: "https://g4vdkkahpjie.leanapp.cn/post-comment"
+smiley:
+  enabled: true
+head_code: |
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3176e6e675ed7773f831e38c7a57880f";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
-encoding: utf-8
-#highlighter: rouge
+# Jekyll Settings
 markdown: kramdown
-redcarpet:
-  extensions: ["tables"]
-
+permalink: /blog/:title:output_ext
+timezone: Asia/Shanghai
+excerpt_separator: <!--more-->
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
       type: "pages"
     values:
-      layout: "default"
-  - scope:
+      layout: "page"
+      keywords: 叶夕青兮, 原创独立博客, Erl, Jekyll, minimal lifestyle blog
+      description: 叶夕青兮，目前还是程序员。这里是她的独立博客，分享编程、建站、生活感悟、旅游随感、读书随笔、原创小说等。
+  -
+    scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+      toc: true
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-books
+  #- jekyll-img-prefix
+  - jekyll-smiley
+  - jekyll-toc
+  - jekyll-deploy-oss
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - scripts/
+deploy:
+  endpoint: "oss-cn-hongkong.aliyuncs.com"
+  bucket_name: "erlim"
+  expired_in: 1
+  paths:
+    - blog
+    - feed.xml
+    - sitemap.xml
