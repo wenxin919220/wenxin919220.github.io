@@ -1,24 +1,22 @@
-<a href="{{ "/" | relative_url }}" class="logo">
-  {%- if site.logo -%}
-  <img src="{{ site.logo | img_url_prefix }}" class="logo_img">
-  {%- endif -%}
-  <h1>{{ site.title }}</h1>
-</a>
-{%- if "slides,chapter,book" contains page.layout and site.theme_setting.archive_page -%}
-{%- assign archive_page = site.pages | where: "path", site.theme_setting.archive_page | first -%}
-<a href="{{ archive_page.url | relative_url }}" class="sidebar__toggler">
-  <span class="sidebar__toggler_top"></span>
-  <span class="sidebar__toggler_middle"></span>
-  <span class="sidebar__toggler_bottom"></span>
-</a>
-{%- endif %}
-{%- if page.layout == "chapter" -%}
-<div class="book-header" role="navigation">
-    <a href="#" id="summaryToggler" class="summary__toggler">
-      {% include icons/ellipsis.html%}
-    </a>
-  <h1>
-    {{ page.title }} - {{ page.book.title }}
-  </h1>
-</div>
-{%- endif -%}
+<title>{{ page.title }}</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ site.description }}">
+<!--<meta name="keywords" content="{{ site.keywords }}">-->
+<meta name="keywords" content="{{ page.title }}">
+<meta name="baidu-site-verification" content="HQAmWn1tQw" />
+<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
+<link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/hc.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/animate.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/dpflow.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/sweet-alert.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/danceword.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/aos.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/font-awesome.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/button.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/baguetteBox.css" rel="stylesheet">
+<!-- HTML4 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif] d-->

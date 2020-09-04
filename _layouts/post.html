@@ -1,42 +1,45 @@
 ---
 layout: default
 ---
-{%- include header.html -%}
-<main class="post__wrapper">
-  {%- include header_nav.html -%}
-  <div class="post__top_navs clearfix">
-    <nav class="post__archive_path">
-      {%- assign blog_page_path = site.theme_setting.blog_page | default: "index.md" %}
-      {%- assign blog_page = site.pages | where: "path", blog_page_path | first -%}
-      <a href="{{ blog_page.url | relative_url }}" id="archiveBtn">
-        <div class="post__archive_icon">
-          <svg width="40" height="40">
-            <circle class="circle-progress" r="18" cy="20" cx="20"  stroke-linejoin="round" stroke-linecap="round" />
-          </svg>
-          <span class="post__archive_icon"></span>
-        </div>
-        {{ site.theme_setting.lang.blog_title | default: site.title }}
-      </a>
-    </nav>
+
+<link href="{{ site.baseurl }}/css/highlight.css" rel="stylesheet">
+<div id="article" aos="zoom-in-up">
+  <div class="article-title">{{ page.title }}</div>
+  <p class="meta">
+    <small>
+      &nbsp;<i class="fa fa-calendar-o"></i> {{ page.date | date_to_string}}
+    </small>
+  </p> <hr/>
+  <div class="post">
+    {{ content }}
   </div>
-  <article class="post">
-    <header class="post__header">
-      <h1 class="post__title">{{ page.title | escape }}</h1>
-      <div class="post__meta">
-        <time>{{ page.date | date: "%Y-%m-%d %H:%M" }}</time>
-      </div>
-    </header>
-    <div class="post__content content">
-      {{ content | toc | img_prefix }}
-    </div>
-  </article>
-  {%- if site.comment.enabled -%}
-  {% include comments.html -%}
-  {%- else -%}
-  {% include contact.html -%}
-  {%- endif -%}
-</main>
-{%- if site.theme_setting.code or page.code -%}
-  <script>hljs.initHighlightingOnLoad();</script>
-{%- endif -%}
-{%- include footer.html -%}
+  {% include dashang.html %}
+  {% include jiathis.html %}
+  {% include click.html %}
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script src="{{ site.baseurl }}/js/highlight.min.js"></script>
+<script src="{{ site.baseurl }}/js/fokus.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<br/>
+{% include pager.html %}
+
+<!-- gitment begin -->
+<div id="gitment"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+
+<!--  31行与44行是注释。      这段代码的功能是，每篇文章后添加评论。（评论网站不是你的）
+<script>
+ var gitment=new Gitment({
+		id:'note',
+		owner:'文心',
+		repo:'wenxin919220.github.io',
+		oauth:{
+			client_id:'9904ca6019f3a948d4f3',
+			client_secret:'86bec38ca036c9e8b5890613051d69f6fd0d7a4e'
+		}
+});
+gitment.render('gitment');
+</script>
+-->
+<!-- gitment end -->
