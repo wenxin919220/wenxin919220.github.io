@@ -26,7 +26,7 @@ links:
   - name:         标签分类
     url:          /tags
     external:     false
-  - name:         关于文心
+  - name:         关于
     url:          /about
     external:     false
 # ------------ CONFIGURABLE END ------------
