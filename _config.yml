@@ -14,19 +14,19 @@ links:
   - name:         首页
     url:          /
     external:     false
-  - name:         书籍
+  - name:         读过的书
     url:          /book
     external:     false
-  - name:         足迹
+  - name:         走过的路
     url:          /road
     external:     false
-  - name:         归档
+  - name:         时间归档
     url:          /archives
     external:     false
-  - name:         标签
+  - name:         标签分类
     url:          /tags
     external:     false
-  - name:         关于
+  - name:         关于文心
     url:          /about
     external:     false
 # ------------ CONFIGURABLE END ------------
