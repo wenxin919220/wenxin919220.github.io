@@ -20,9 +20,6 @@ links:
   - name:         旅游
     url:          /road
     external:     false
-  - name:         生活
-    url:          /life
-    external:     false
   - name:         归档
     url:          /archives
     external:     false
