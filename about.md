@@ -7,8 +7,6 @@ tags:
 - 文心
 - 简述
 - 关于
-redirect_from:
-  - /about
 ---
 
 
