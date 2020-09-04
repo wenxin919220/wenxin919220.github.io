@@ -222,6 +222,7 @@ You should care about the kind of operations you need. In Redis there are a lot 
 
 ## redis和memecache的不同在于[2]：
 
+
 ## 存储方式：
     memecache 把数据全部存在内存之中，断电后会挂掉，数据不能超过内存大小
     redis有部份存在硬盘上，这样能保证数据的持久性，支持数据的持久化（笔者注：有快照和AOF日志两种持久化方式，在实际应用的时候，要特别注意配置文件快照参数，要不就很有可能服务器频繁满载做dump 。
