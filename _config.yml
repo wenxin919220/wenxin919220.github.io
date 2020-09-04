@@ -1,6 +1,6 @@
 # ----------- CONFIGURABLE START -----------
 title:            "文心|jekyll blog|GitHub blog"
-description:      "！！！！！！！！！！！！！！ wenxin「角落」侃侃理想、谈谈人生、敲敲代码。"
+description:      "！！！！！！！！！！！！！！ wenxin"
 url:              https://wenxin919220.github.io # 域名
 signoff:          "WenXin" # Your name
 facebook_appid:   #wenxin
@@ -19,6 +19,9 @@ links:
     external:     false
   - name:         旅游
     url:          /road
+    external:     false
+  - name:         生活
+    url:          /life
     external:     false
   - name:         归档
     url:          /archives
