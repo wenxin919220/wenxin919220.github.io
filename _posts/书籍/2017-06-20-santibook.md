@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: blog          
 book: true
 background: red
 background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-15/43335546.jpg
@@ -14,8 +14,7 @@ tags:
 - 面壁者
 - 智子
 ---
- 
-  
+
 #### 三体看完了，有些意犹未尽 
  
   特别是在这么一个雨夜，好像和小雨一样，思绪万千，缠缠绵绵。
