@@ -1,9 +1,13 @@
 ---
 layout: blog
+istop: false
 book: true
+road: false
+background: red
 background-image: 
+title: 文心读过的的书|在读的书
 category: 书籍
-title: 文心读过书|在读的书
+date: 2020-09-04
 tags:
 - 书籍
 - book
