@@ -25,8 +25,7 @@ tags:
 1. Visual Studio 2019 （2017亦可）
 2. VisualGDB （要能够支持Visual Studio 的版本）
    链接：<https://pan.baidu.com/s/1N8vGpmgM6gdL9Imrrhe7Ug>  提取码：1ppj
-3. STM32CubeMx
-下载及安装过程自行搜索。
+3. STM32CubeMx  (下载及安装过程自行搜索。)
 
 
 
