@@ -41,24 +41,36 @@ tags:
 
 # ** Visual Studio 2019注意项**
 1. 在使用 VS 建立工程之前，先要下载并安装 VS的一个插件 VisualGDB。
+
 2. 新建一个工程。注意选择 Embedded Project wizard 
 ![wenxin][pictutr_02]
+
 3. 注意选择正确的文件夹。
-![wenxin][pictutr_03]  
+![wenxin][pictutr_03] 
+
 4. 导入gpdsc文件。
 ![wenxin][pictutr_04]  
+
 5. 选择合适的芯片。
 ![wenxin][pictutr_05]
+
 6. 仿真配置。(配置完成后，点击finish即可)
 ![wenxin][pictutr_06]
+
 7. 创建好的项目如下图。
 ![wenxin][pictutr_07]
+
 8. 继续进行如下配置。
 ![wenxin][pictutr_08]
+
 9. 
 ![wenxin][pictutr_09]
+
 10. 
 ![wenxin][pictutr_10]
+
+11. 配置完成后，点击右下角的 Apply 再点击 OK 即可。
+
 
 [pictutr_01]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_01.png?raw=true
 
