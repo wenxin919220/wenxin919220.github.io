@@ -38,8 +38,8 @@ tags:
 ![wenxin][pictutr_02]
 3. 注意选择正确的文件夹。
 ![wenxin][pictutr_03]  
-
-
+4. 导入gpdsc文件。
+![wenxin][pictutr_04]  
 
 
 
@@ -48,3 +48,5 @@ tags:
 [pictutr_02]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_02.png?raw=true
 
 [pictutr_03]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_03.png?raw=true
+
+[pictutr_04]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_04.png?raw=true
