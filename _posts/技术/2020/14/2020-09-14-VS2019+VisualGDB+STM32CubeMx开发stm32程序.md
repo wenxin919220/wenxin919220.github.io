@@ -71,6 +71,7 @@ tags:
 
 11. 配置完成后，点击右下角的 Apply 再点击 OK 即可。
 
+12. 将你的单片机连接好，就可以下载程序了。
 
 [pictutr_01]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_01.png?raw=true
 
