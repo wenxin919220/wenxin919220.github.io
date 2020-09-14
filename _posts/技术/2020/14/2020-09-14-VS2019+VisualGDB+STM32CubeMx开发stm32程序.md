@@ -28,6 +28,8 @@ tags:
 3. STM32CubeMx
 下载及安装过程自行搜索。
 
+
+
 # **STM32CubeMx注意项**
 1. 首先用 STM32CubeM 建立并配置好一个工程。（不会使用 STM32CubeM 请名自行搜索）【注意】在最后一步要选择 **Other Toolchains(GPDSC)**，其他按照一般步骤即可。
 ![wenxin][pictutr_01]
@@ -35,7 +37,10 @@ tags:
 
 
 # ** Visual Studio 2019 的一些配置**
-
+1. 如下图
+![wenxin][pictutr_01_1]
+2. 如下图
+![wenxin][pictutr_01_2]
 
 
 
@@ -63,15 +68,17 @@ tags:
 8. 继续进行如下配置。
 ![wenxin][pictutr_08]
 
-9. 
+9. 如下图
 ![wenxin][pictutr_09]
 
-10. 
+10. 如下图
 ![wenxin][pictutr_10]
 
 11. 配置完成后，点击右下角的 Apply 再点击 OK 即可。
 
 12. 将你的单片机连接好，就可以下载程序了。
+
+
 
 [pictutr_01]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_01.png?raw=true
 
@@ -93,8 +100,9 @@ tags:
 
 [pictutr_10]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_10.png?raw=true
 
+[pictutr_01_1]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_01_1.png?raw=true
 
-
+[pictutr_01_2]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_01_2.png?raw=true
 
 
 
