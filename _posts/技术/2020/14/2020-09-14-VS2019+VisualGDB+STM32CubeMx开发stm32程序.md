@@ -49,8 +49,9 @@ tags:
 ![wenxin][pictutr_04]  
 5. 选择合适的芯片。
 ![wenxin][pictutr_05]
-6. 
-
+6. 仿真配置。(配置完成后，点击finish即可)
+![wenxin][pictutr_06]
+7. 
 
 [pictutr_01]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_01.png?raw=true
 
@@ -63,3 +64,4 @@ tags:
 [pictutr_05]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_05.png?raw=true
 
 
+[pictutr_06]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_06.png?raw=true
