@@ -34,10 +34,13 @@ tags:
 
 # ** Visual Studio 2019注意项**
 1. 在使用 VS 建立工程之前，先要下载并安装 VS的一个插件 VisualGDB。
-2. 新建一个工程
+2. 新建一个工程。注意选择 Embedded Project wizard 
+![wenxin][pictutr_02]
 
 
 
 
 
 [pictutr_01]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_01.png?raw=true
+
+[pictutr_02]:https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_02.png?raw=true
