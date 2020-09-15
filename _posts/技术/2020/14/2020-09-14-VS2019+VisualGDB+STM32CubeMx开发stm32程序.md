@@ -35,7 +35,7 @@ tags:
 
 
 
-# ** Visual Studio 2019 的一些配置**
+# **Visual Studio 2019 的一些配置**
 1. 如下图
 ![wenxin][pictutr_01_1]
 2. 如下图
@@ -43,7 +43,7 @@ tags:
 
 
 
-# ** Visual Studio 2019注意项**
+# **Visual Studio 2019注意项**
 1. 在使用 VS 建立工程之前，先要下载并安装 VS的一个插件 VisualGDB。
 
 2. 新建一个工程。注意选择 Embedded Project wizard 
