@@ -6,8 +6,8 @@ road: false
 title: "VS2019+VisualGDB+STM32CubeMx开发stm32程序"
 background: red
 background-image: https://github.com/wenxin919220/wenxin919220.github.io/blob/master/_posts/%E6%8A%80%E6%9C%AF/2020/14/2020-09-14-VS2019+VisualGDB+STM32CubeMx%E5%BC%80%E5%8F%91stm32%E7%A8%8B%E5%BA%8F_00.png?raw=true
-category: VS2019+STM32CubeMx
 date: 2020-09-14
+category: VS2019+STM32CubeMx
 tags:
 - VS2019
 - VisualGDB
